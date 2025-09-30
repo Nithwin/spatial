@@ -43,8 +43,14 @@
 .scroller__inner {
   display: flex;
   flex-wrap: nowrap;
-  gap: 2rem;
+  gap: 1.3rem;
   animation: scroll 40s linear infinite;
+}
+.scroller__outer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.3rem;
+  animation: scrollback 40s linear infinite;
 }
 
 @keyframes scroll {
@@ -53,5 +59,14 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollback {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
