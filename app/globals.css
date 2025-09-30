@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-black:#171717;
   --font-poppins:var(--font-poppins);
@@ -70,3 +74,5 @@
     transform: translateX(0);
   }
 }
+
+

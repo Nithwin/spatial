@@ -1,9 +1,9 @@
 import { Mail } from "lucide-react";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({ref}) => {
   return (
-    <section className="relative z-20 min-h-dvh h-full w-full ">
+    <section ref={ref} className="relative z-20 min-h-dvh h-full w-full ">
       <div className="bg-black/40 absolute z-10 inset-0" />
       <video
         muted

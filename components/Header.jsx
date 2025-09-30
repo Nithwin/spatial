@@ -1,14 +1,37 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "./utils/Logo";
 import { Ellipsis, Plus, UserRound } from "lucide-react";
 import { NavList } from "@/utils/data";
 import Link from "next/link";
-
-const Header = () => {
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
+const Header = ({heroRef}) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+  useEffect(() => {
+    const header = headerRef.current;
+    const hero = heroRef.current || null;
+    if(!header || !hero) return;
+    const st = ScrollTrigger.create({
+      trigger:hero,
+      start:'bottom top',
+      end:"+=150",
+      scrub:1,
+      animation:gsap.to(header, {
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        backdropFilter:"blur(16px)",
+        ease:"power2.inOut",
+      })
+    });
+
+    return () => {
+      st.kill();
+    }
+  }, []);
   return (
-    <nav id="header" className={`bg-black lg:bg-black/0 w-full p-4 z-50 fixed top-0`}>
+    <nav ref={headerRef} id="header" className={`bg-black lg:bg-black/0 w-full p-4 z-50 fixed top-0`}>
       <div className="lg:flex-center lg:justify-between lg:px-[5rem]">
         <div
           className={`flex-center justify-between lg:justify-center lg:gap-10`}
