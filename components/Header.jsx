@@ -8,7 +8,7 @@ import Link from "next/link";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav id="header" className={`bg-black lg:bg-black/10 w-full p-4 z-50`}>
+    <nav id="header" className={`bg-black lg:bg-black/0 w-full p-4 z-50 fixed top-0`}>
       <div className="lg:flex-center lg:justify-between lg:px-[5rem]">
         <div
           className={`flex-center justify-between lg:justify-center lg:gap-10`}
@@ -29,7 +29,7 @@ const Header = () => {
           <ul
             className={`${
               menuOpen ? "translate-y-0" : "-translate-y-130"
-            } lg:translate-0 lg:items-center lg:p-0 lg:gap-7`}
+            } lg:translate-0 lg:items-center lg:p-0 lg:gap-7 lg:font-bold`}
           >
             {NavList.map((nav, index) => (
               <li key={index}>
@@ -56,13 +56,13 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:items-center gap-5">
           <Link href={"/"}>
-            <span className="bg-transparent text-white font-semibold border-1 border-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
-              <UserRound className="text-white h-4" />
+            <span className="bg-transparent text-white hover:text-black hover:bg-white transition-all delay-150 ease-out font-semibold border-1 border-white/50 flex w-fit px-4 py-2 rounded-full text-lg items-center">
+              <UserRound className="h-4" />
               Log In
             </span>
           </Link>
           <Link href={"/"}>
-            <span className="bg-gradient-to-r from-cyan-300 to-blue-700 text-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
+            <span className="bg-gradient-to-r from-cyan-300 hover:from-blue-700 transition-all delay-200 ease-in to-blue-700 text-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
               <Plus className="text-white h-5 font-black" />
               Create for Free
             </span>
