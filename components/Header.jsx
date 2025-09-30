@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Logo from "./Logo";
+import Logo from "./utils/Logo";
 import { Ellipsis, Plus, UserRound } from "lucide-react";
 import { NavList } from "@/utils/data";
 import Link from "next/link";

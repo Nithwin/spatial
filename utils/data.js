@@ -32,3 +32,26 @@ export const Brands = [
     "vogue.webp",
     "walmart.webp",
 ]
+
+export const IndustryList = [
+    {
+        img:"i1.webp",
+        heading:"Commerce & Brands",
+        subheading:"Blur the line between play and purchase. Design branded games, interactive campaigns, and 3D shopping moments that convert."
+    }
+    ,{
+        img:'i2.webp',
+        heading:"Corporate Training",
+        subheading:"Build real-time training simulations. Use Ai agents, interactive objects, and progress tracking - all in multiplayer-ready environments."
+    }
+    ,{
+        img:'i3.webp',
+        heading:"Educational",
+        subheading:"Gamify education at any level. Perfect for K-12, higher ed, and workforce training, all designed with accessibility in mind."
+    }
+    ,{
+        img:'i4.webp',
+        heading:"Personal Projects",
+        subheading:"Start building for fun. Whether you're learning Unity or exploring 3D, Spatial makes it easy to start creating."
+    }
+]

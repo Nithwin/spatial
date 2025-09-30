@@ -22,12 +22,12 @@
       @apply transition-transform delay-200 ease-linear  fixed lg:static top-[10vh] left-0 right-0 bg-black py-4 pb-6 px-4 text-white font-semibold flex flex-col lg:flex-row gap-3 rounded-b-2xl z-10 border-1 lg:border-0 border-white/20 lg:bg-transparent 
     }
   }
+  #industry-verticals{
+    @apply bg-black text-white p-4 lg:px-[15rem] py-10 lg:py-16
+  }
 }
 
-.scroller {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
+
 
 .scroller::-webkit-scrollbar {
   display: none;
