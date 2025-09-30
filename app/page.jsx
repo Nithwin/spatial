@@ -1,3 +1,4 @@
+import BrandsScroll from "@/components/BrandsScroll"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 
@@ -6,6 +7,7 @@ const Home = () => {
     <main className="relative">
       <Header />
       <Hero />
+      <BrandsScroll />
     </main>
   )
 }
