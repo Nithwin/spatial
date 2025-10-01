@@ -33,8 +33,8 @@ const AvatarCustomization = () => {
   return (
     <section className="min-h-dvh bg-black py-[5rem] lg:py-0 relative overflow-hidden lg:px-[5rem]">
       <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[8rem] lg:w-full">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-black/20 z-50"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/0 to-black/20 z-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-black/50 via-black/0 to-black/50 z-50"></div>
         <div className="flex-1 z-50 w-full">
           <div className="flex flex-col gap-3 w-full">
             <p className="text-blue-600 font-semibold text-start text-sm lg:text-xl">
@@ -73,6 +73,7 @@ const AvatarCustomization = () => {
             </Link>
           </div>
         </div>
+
         <div className="flex-1 relative lg:static z-20 py-[4rem] lg:py-0">
           <div className="relative z-50 p-6  lg:aspect-[9/16] lg:w-[30rem] mx-auto">
             <Image
