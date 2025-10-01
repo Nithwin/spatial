@@ -1,5 +1,6 @@
 'use client';
 import BrandsScroll from "@/components/BrandsScroll"
+import CrossPlatform from "@/components/CrossPlatform";
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Industry from "@/components/Industry"
@@ -17,6 +18,7 @@ const Home = () => {
       <Industry />
       <UseCases />
       <YourWorld />
+      <CrossPlatform />
     </main>
   )
 }

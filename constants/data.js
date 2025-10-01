@@ -107,3 +107,21 @@ export const useCasesListDown = [
         subheading:"Cafe Joyeux Served From The Heart",
     },
 ]
+
+export const CrossPlatFormList = [
+    {
+        img:"web.webp",
+        heading:"Web",
+        subheading:"Enjoy immersive experiences as webpages on your PC, no download required.",
+    },
+    {
+        img:"vr.webp",
+        heading:"VR",
+        subheading:"Deep immersion and meaningful personal connections through Spatial worlds.",
+    },
+    {
+        img:"mobile.webp",
+        heading:"Mobile",
+        subheading:"Explore virtual experiences and connect with others from anywhere, anytime.",
+    },
+]
