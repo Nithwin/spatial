@@ -1,4 +1,5 @@
 'use client';
+import AudienceCount from "@/components/AudienceCount";
 import AvatarCustomization from "@/components/AvatarCustomization";
 import BrandsScroll from "@/components/BrandsScroll"
 import CrossPlatform from "@/components/CrossPlatform";
@@ -23,6 +24,7 @@ const Home = () => {
       <CrossPlatform />
       <AvatarCustomization />
       <Explore />
+      <AudienceCount />
     </main>
   )
 }

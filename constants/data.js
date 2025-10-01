@@ -207,3 +207,23 @@ export const ExploreImageListDown = [
     loves: "344k",
   },
 ];
+
+
+export const AudienceCountList = [
+  {
+    heading:"2.5M+",
+    subheading:"Total User generated 3D spaces",
+  },
+  {
+    heading:"32M+",
+    subheading:"Unique Sessions (Last 12 Months)",
+  },
+  {
+    heading:"476M+",
+    subheading:"Total Engagement Hours",
+  },
+  {
+    heading:"80%+",
+    subheading:"Over 21 Audience",
+  },
+]
