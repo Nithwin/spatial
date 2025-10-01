@@ -4,6 +4,7 @@ import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Industry from "@/components/Industry"
 import UseCases from "@/components/UseCases"
+import YourWorld from "@/components/YourWorld";
 import { useRef } from "react"
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <BrandsScroll />
       <Industry />
       <UseCases />
+      <YourWorld />
     </main>
   )
 }
