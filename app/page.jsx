@@ -1,4 +1,5 @@
 'use client';
+import AvatarCustomization from "@/components/AvatarCustomization";
 import BrandsScroll from "@/components/BrandsScroll"
 import CrossPlatform from "@/components/CrossPlatform";
 import Header from "@/components/Header"
@@ -19,6 +20,7 @@ const Home = () => {
       <UseCases />
       <YourWorld />
       <CrossPlatform />
+      <AvatarCustomization />
     </main>
   )
 }
