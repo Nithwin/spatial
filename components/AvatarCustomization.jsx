@@ -33,8 +33,7 @@ const AvatarCustomization = () => {
   return (
     <section className="min-h-dvh bg-black py-[5rem] lg:py-0 relative overflow-hidden lg:px-[5rem]">
       <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[8rem] lg:w-full">
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/0 to-black/20 z-50"></div>
-        <div className="absolute inset-0 bg-gradient-to-l from-black/50 via-black/0 to-black/50 z-50"></div>
+        
         <div className="flex-1 z-50 w-full">
           <div className="flex flex-col gap-3 w-full">
             <p className="text-blue-600 font-semibold text-start text-sm lg:text-xl">
@@ -74,7 +73,7 @@ const AvatarCustomization = () => {
           </div>
         </div>
 
-        <div className="flex-1 relative lg:static z-20 py-[4rem] lg:py-0">
+        <div className="flex-1 relative lg:static py-[4rem] lg:py-0">
           <div className="relative z-50 p-6  lg:aspect-[9/16] lg:w-[30rem] mx-auto">
             <Image
             key={AvatarImageList[currentImage]}
@@ -82,19 +81,23 @@ const AvatarCustomization = () => {
               alt="Image"
               height={500}
               width={500}
-              className={`avataranimate h-full w-full object-contain`}
+              className={`avataranimate h-full w-full object-contain relative z-50`}
             />
           </div>
+          
           <AvatarBackground
             className={
               "absolute inset-0 top-[4rem] bottom-[4rem] z-0 scale-110 mask-t-from-1 mask-b-from-1 opacity-80"
             }
           />
 
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-black/50 via-transparent to-black/50 z-10"></div>
+
           {floatingItemStyles.map((style, index) => (
             <div
               key={index}
-              className={`absolute p-2 lg:p-4 rounded-full border border-white/40 bg-black flex items-center justify-center ${style} overflow-hidden`}
+              className={`absolute p-2 lg:p-4 z-0 rounded-full border border-white/40 bg-black flex items-center justify-center ${style} overflow-hidden`}
             >
               <Image
                 src={AvatarItemList[index]}
