@@ -109,3 +109,17 @@ body {
 .usecase_scroller:hover {
   animation-play-state: paused;
 }
+
+
+.avataranimate{
+  animation: avatarup 0.7s ease-in;
+}
+
+@keyframes avatarup{
+  from{
+    transform: translateY(10%);
+  }
+  to{
+    transform: translateY(0);;
+  }
+}

@@ -125,3 +125,33 @@ export const CrossPlatFormList = [
         subheading:"Explore virtual experiences and connect with others from anywhere, anytime.",
     },
 ]
+
+export const AvatarIconList = [
+    {
+        img:"rpm.webp",
+        name:"RPM Avatar"
+    },
+    {
+        img:"ari.webp",
+        name:"Custom Avatar"
+    },
+    {
+        img:"bot.webp",
+        name:"AI Chatbot"
+    },
+]
+export const AvatarImageList = [
+        "rpm-full.webp",
+        "ari-full.webp",
+        "bot-full.webp",
+]
+
+export const AvatarItemList = [
+    "blox.webp",
+    "glasses.webp",
+    "helmet.webp",
+    "hoodies.webp",
+    "jumper.webp",
+    "jumppack.webp",
+    "mask.webp",
+].map((item) => "/images/avatarcustomization/"+item);

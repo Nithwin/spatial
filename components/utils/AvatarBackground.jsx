@@ -1,6 +1,14 @@
-import * as React from "react"
-const AvatarBackground = (props) => (
-  <svg aria-hidden="true" className="size-full" {...props}>
+import * as React from 'react';
+
+
+const AvatarBackground = (({ className, ...props }, ref) => (
+  <svg
+    ref={ref}
+    aria-hidden="true"
+    className={`size-full ${className || ''}`}
+    {...props}
+  >
+    <title>Geometric Background Pattern</title>
     <defs>
       <pattern
         id="a"
@@ -11,10 +19,17 @@ const AvatarBackground = (props) => (
         patternTransform="translate(112 72)"
         patternUnits="userSpaceOnUse"
       >
-        <path fill="none" stroke="currentColor" d="M0 128V.5h128" />
+        <path
+          stroke="currentColor"
+          fill="none"
+          d="M0 128V.5h128"
+        />
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#a)" />
   </svg>
-)
-export default AvatarBackground
+));
+
+AvatarBackground.displayName = 'AvatarBackground';
+
+export default AvatarBackground;
