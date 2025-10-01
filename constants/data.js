@@ -55,3 +55,55 @@ export const IndustryList = [
         subheading:"Start building for fun. Whether you're learning Unity or exploring 3D, Spatial makes it easy to start creating."
     }
 ]
+
+
+export const useCasesListUp = [
+    {
+        img:"absolut.webp",
+        heading:"Absolut",
+        subheading:"Asolut: Journey to the Cosmos",
+    },
+    {
+        img:"hugo-boss.webp",
+        heading:"Hugo Boss",
+        subheading:"BOSS Immersive Showroom",
+    },
+    {
+        img:"bmw.webp",
+        heading:"BMW",
+        subheading:"BMW Motorrad",
+    },
+    {
+        img:"jack-daniel.webp",
+        heading:"Jack Daniel's",
+        subheading:"AB+L The Verse",
+    },
+    {
+        img:"korea-tech.webp",
+        heading:"KOREATECH",
+        subheading:"Interactive Virtual Learning",
+    },
+]
+
+export const useCasesListDown = [
+    {
+        img:"oigiama-kasama.webp",
+        heading:"Pigiama Kasama",
+        subheading:"Kasama The Awakening",
+    },
+    {
+        img:"utah-jazz.webp",
+        heading:"Utah Jazz",
+        subheading:"JazzXR 50",
+    },
+    {
+        img:"vogue-singapore.webp",
+        heading:"Vogue Singapore",
+        subheading:"Fashion's New World",
+    },
+    {
+        img:"cafe-joyeux.webp",
+        heading:"Cafe Joyeux",
+        subheading:"Cafe Joyeux Served From The Heart",
+    },
+]

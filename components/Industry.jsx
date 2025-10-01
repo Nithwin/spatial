@@ -1,6 +1,6 @@
 import React from 'react'
 import Unity from './utils/Unity'
-import { IndustryList } from '@/utils/data'
+import { IndustryList } from '@/constants/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
@@ -8,8 +8,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 const Industry = () => {
   return (
     <section id="industry-verticals" className=''>
-        <div className='flex flex-col gap-5 max-w-[85rem] mx-auto'>
-            <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-5 lg:gap-10 max-w-[85rem] mx-auto'>
+            <div className='flex flex-col gap-3 lg:gap-5'>
                 <div className='flex items-center gap-2'>
                     <h3 className='text-xl  font-semibold'>Powered by </h3>
                     <Unity className={'h-8 text-white'} />
@@ -20,7 +20,7 @@ const Industry = () => {
                 {
                     IndustryList.map((item, index) => (
                         <div 
-                        className='relative aspect-[9/16] rounded-xl overflow-hidden'
+                        className='relative aspect-[9/16] rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-transform ease-linear delay-0'
                         key={index}>
                             <Image 
                             src={"/images/industry/"+item.img}

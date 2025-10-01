@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "./utils/Logo";
 import { Ellipsis, Plus, UserRound } from "lucide-react";
-import { NavList } from "@/utils/data";
+import { NavList } from "@/constants/data";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -85,7 +85,7 @@ const Header = ({heroRef}) => {
             </span>
           </Link>
           <Link href={"/"}>
-            <span className="bg-gradient-to-r from-cyan-300 hover:from-blue-700 transition-all delay-200 ease-in to-blue-700 text-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
+            <span className="bg-gradient-to-l to-cyan-500 hover:to-blue-700 transition-colors delay-200 ease-linear from-blue-700 text-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
               <Plus className="text-white h-5 font-black" />
               Create for Free
             </span>

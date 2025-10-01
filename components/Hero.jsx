@@ -25,7 +25,7 @@ const Hero = ({ref}) => {
         </p>
         <div className="flex items-center gap-2 px-2">
           <Link href={"/"}>
-            <span className="bg-gradient-to-r from-cyan-500 hover:from-blue-700 transition-all delay-200 ease-in to-blue-700 text-white flex w-fit px-6 lg:px-18 font-bold py-3 rounded-full text-lg items-center">
+            <span className="bg-gradient-to-l to-cyan-500 hover:to-blue-700 transition-colors delay-200 ease-linear from-blue-700 text-white flex w-fit px-6 lg:px-18 font-bold py-3 rounded-full text-lg items-center">
               Get Started
             </span>
           </Link>

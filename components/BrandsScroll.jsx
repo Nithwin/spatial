@@ -1,6 +1,6 @@
 // BrandsScroll.jsx
 
-import { Brands } from "@/utils/data";
+import { Brands } from "@/constants/data";
 import Image from "next/image";
 import React from "react";
 
