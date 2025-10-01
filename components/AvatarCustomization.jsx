@@ -6,9 +6,8 @@ import {
 } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AvatarBackground from "./utils/AvatarBackground";
-
 
 const floatingItemStyles = [
   "bottom-0 -left-25 rotate-[30deg] lg:left-1/5 lg:-bottom-[10%]",
@@ -21,13 +20,20 @@ const floatingItemStyles = [
 ];
 
 const AvatarCustomization = () => {
-  const [currentImage, setCurrentImage] = useState(AvatarImageList[0]);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [animate, setAnimate] = useState(false);
+  // useEffect(() => {
+  //   setAnimate(true);
+  //   const timer = setTimeout(() => {
+  //     setAnimate(false);
+  //   }, 3000);
 
+  //   return ()=> clearTimeout(timer);
+  // }, [currentImage]);
   return (
     <section className="min-h-dvh bg-black py-[5rem] lg:py-0 relative overflow-hidden lg:px-[5rem]">
       <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[8rem] lg:w-full">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-black/20 z-50"
-        ></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-black/20 z-50"></div>
 
         <div className="flex-1 z-50 w-full">
           <div className="flex flex-col gap-3 w-full">
@@ -44,14 +50,16 @@ const AvatarCustomization = () => {
             </p>
             <div className="flex gap-5">
               {AvatarIconList.map((avatar, index) => (
-                <div key={index} className="flex flex-col items-center gap-2">
-                  <div className="rounded-full aspect-square overflow-hidden w-20 lg:w-28 border-1 border-gray-500/30">
+                <div key={index} 
+                onClick={() => {setCurrentImage(index)}}
+                className="group cursor-pointer flex flex-col items-center gap-2">
+                  <div className={`${index === currentImage ? 'border-blue-600 shadow-sm shadow-blue-600' : ''} group-hover:border-blue-600 group-hover:shadow group-hover:blue-cyan-600 transition-all delay-150 ease-linear  rounded-full aspect-square overflow-hidden w-20 lg:w-28 border-1 border-gray-500/30`}>
                     <Image
                       src={"/images/avatarcustomization/" + avatar.img}
                       alt={avatar.name}
                       width={100}
                       height={100}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover group-hover:scale-105 transition-transform ease-linear delay-150"
                     />
                   </div>
                   <p className="text-xs font-medium">{avatar.name}</p>
@@ -65,14 +73,15 @@ const AvatarCustomization = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1 relative lg:static z-20 py-[4rem] lg:py-5 ">
+        <div className="flex-1 relative lg:static z-20 py-[4rem] lg:py-0">
           <div className="relative z-50 p-6  lg:aspect-[9/16] lg:w-[30rem] mx-auto">
             <Image
-              src={"/images/avatarcustomization/" + currentImage}
+            key={AvatarImageList[currentImage]}
+              src={"/images/avatarcustomization/" + AvatarImageList[currentImage]}
               alt="Image"
               height={500}
               width={500}
-              className="avataranimate h-full w-full object-contain"
+              className={`avataranimate h-full w-full object-contain`}
             />
           </div>
           <AvatarBackground
