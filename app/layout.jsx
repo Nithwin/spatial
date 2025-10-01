@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Spatial',
+  title: 'SF',
   description: 'The app is in development by Nithwin',
   icons: {
     icon: '/logo.svg',

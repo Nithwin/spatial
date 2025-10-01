@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.544.0",
     "next": "15.5.4",

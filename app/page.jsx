@@ -7,6 +7,7 @@ import Explore from "@/components/Explore";
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Industry from "@/components/Industry"
+import Press from "@/components/Press";
 import UseCases from "@/components/UseCases"
 import YourWorld from "@/components/YourWorld";
 import { useRef } from "react"
@@ -25,6 +26,7 @@ const Home = () => {
       <AvatarCustomization />
       <Explore />
       <AudienceCount />
+      <Press />
     </main>
   )
 }

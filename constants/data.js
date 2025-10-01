@@ -227,3 +227,39 @@ export const AudienceCountList = [
     subheading:"Over 21 Audience",
   },
 ]
+
+
+export const PressList = [
+  {
+    img: `forbes.png`,
+    content:`“We specifically chose to work with Spatial because it is available on VR, web and mobile.” Aside from being a metaverse debut for Hublot, the Spatial activation also provides a revealing insight into the direction that marketing is headed.`,
+  },
+  {
+    img: `wired.png`,
+    content:`Now, you can play a game like the kind Spatial is selling—something between a casual mobile game and a massive AAA title—right in the browser.`,
+  },
+  {
+    img: `vb.png`,
+    content:`Now, you can play a game like the kind Spatial is selling—something between a casual mobile game and a massive AAA title—right in the browser.`,
+  },
+  {
+    img: `today.webp`,
+    content:`Jack Daniel's opened its virtual doors to the public last September with a metaverse experience using technologies from XR firm Spatial. Fans can leverage Spatial's XR platform to access the first-ever experience for the beverage firm across smartphones, tablets, PCs, and VR headsets.`,
+  },
+  {
+    img: `telefonica.png`,
+    content:`Spatial Studio provides a centralized platform where you can easily see and oversee all your creations. This powerful tool empowers you to shape and mold your Worlds, enabling you to craft massive, intertwined experiences.`,
+  },
+  {
+    img: `pocket.png`,
+    content:`Social gaming company Spatial releases UGC games platform rivaling Roblox and its first season of in-house games, kicking off new era`,
+  },
+  {
+    img: `yo.png`,
+    content:`Spatial is leveraging the vast Unity community and offering monetization options that make it a truly viable option for any developer`,
+  },
+  {
+    img: `beyond.png`,
+    content:`The cloud-based platform aims to make it easy for brands and developers to embrace a web-focused approach to user generated content`,
+  },
+]
