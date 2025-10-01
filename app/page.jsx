@@ -2,6 +2,7 @@
 import AvatarCustomization from "@/components/AvatarCustomization";
 import BrandsScroll from "@/components/BrandsScroll"
 import CrossPlatform from "@/components/CrossPlatform";
+import Explore from "@/components/Explore";
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Industry from "@/components/Industry"
@@ -21,6 +22,7 @@ const Home = () => {
       <YourWorld />
       <CrossPlatform />
       <AvatarCustomization />
+      <Explore />
     </main>
   )
 }

@@ -106,7 +106,10 @@ body {
   }
 }
 
-.usecase_scroller:hover {
+.usecase_scroller:hover{
+  animation-play-state: paused;
+}
+.usecase_scroller_back:hover{
   animation-play-state: paused;
 }
 
