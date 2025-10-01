@@ -1,46 +1,47 @@
 @import "tailwindcss";
 
-body{
+body {
   scroll-behavior: smooth;
 }
 
 @theme {
-  --color-black:#171717;
-  --font-poppins:var(--font-poppins);
-  --font-inter:var(--font-inter);
+  --color-black: #171717;
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
 }
 
 @utility flex-center {
-  @apply flex items-center justify-center
+  @apply flex items-center justify-center;
 }
 
-*{
-  @apply font-poppins
+* {
+  @apply font-poppins;
 }
-
-
 
 @layer components {
   #header {
-    ul{
-      @apply transition-transform delay-200 ease-linear  fixed lg:static top-[10vh] left-0 right-0 bg-black py-4 pb-6 px-4 text-white font-semibold flex flex-col lg:flex-row gap-3 rounded-b-2xl z-10 border-1 lg:border-0 border-white/20 lg:bg-transparent 
+    ul {
+      @apply transition-transform delay-200 ease-linear  fixed lg:static top-[10vh] left-0 right-0 bg-black py-4 pb-6 px-4 text-white font-semibold flex flex-col lg:flex-row gap-3 rounded-b-2xl z-10 border-1 lg:border-0 border-white/20 lg:bg-transparent;
     }
   }
-  #industry-verticals{
-    @apply bg-black text-white p-4 lg:px-[7rem] py-10 lg:py-14 xl:py-16
+  #industry-verticals {
+    @apply bg-black text-white p-4 lg:px-[7rem] py-10 lg:py-14 xl:py-16;
   }
 }
-
-
 
 .scroller::-webkit-scrollbar {
   display: none;
 }
 
-
 .scroller {
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
@@ -56,7 +57,6 @@ body{
   gap: 1.3rem;
   animation: scrollback 40s linear infinite;
 }
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -74,5 +74,38 @@ body{
     transform: translateX(0);
   }
 }
+.usecase_scroller {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.3rem;
+  width: max-content;
+  animation: scroll2 40s linear infinite;
+}
 
+.usecase_scroller_back{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.3rem;
+  width: max-content;
+  animation: scroll2back 40s linear infinite;
+}
+@keyframes scroll2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll2back {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
+.usecase_scroller:hover {
+  animation-play-state: paused;
+}

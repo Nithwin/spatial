@@ -20,7 +20,7 @@ const Header = ({heroRef}) => {
       end:"+=150",
       scrub:1,
       animation:gsap.to(header, {
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: 'rgba(0,0,0,0.2)',
         backdropFilter:"blur(16px)",
         ease:"power2.inOut",
       })
@@ -31,7 +31,7 @@ const Header = ({heroRef}) => {
     }
   }, []);
   return (
-    <nav ref={headerRef} id="header" className={`bg-black lg:bg-black/0 w-full p-4 z-50 fixed top-0`}>
+    <nav ref={headerRef} id="header" className={`bg-black/30 lg:bg-transparent w-full p-4 z-50 fixed top-0`}>
       <div className="lg:flex-center lg:justify-between lg:px-[5rem]">
         <div
           className={`flex-center justify-between lg:justify-center lg:gap-10`}
