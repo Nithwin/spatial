@@ -1,4 +1,4 @@
-import { useCasesListUp } from "@/constants/data";
+import { useCasesListDown, useCasesListUp } from "@/constants/data";
 import Image from "next/image";
 import React from "react";
 
@@ -71,9 +71,10 @@ const UseCases = () => {
               ))}
             </div>
           </div>
+
           <div className="overflow-hidden scroller">
             <div className="py-2 usecase_scroller_back">
-              {useCasesListUp.map((item, index) => (
+              {useCasesListDown.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={index}
@@ -96,7 +97,7 @@ const UseCases = () => {
                 </div>
               ))}
 
-              {useCasesListUp.map((item, index) => (
+              {useCasesListDown.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={item.heading}

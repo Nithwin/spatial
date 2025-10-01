@@ -87,7 +87,7 @@ export const useCasesListUp = [
 
 export const useCasesListDown = [
     {
-        img:"oigiama-kasama.webp",
+        img:"pigiama-kasama.webp",
         heading:"Pigiama Kasama",
         subheading:"Kasama The Awakening",
     },
