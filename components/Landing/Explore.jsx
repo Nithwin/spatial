@@ -35,7 +35,7 @@ const Explore = () => {
                 >
                   <Image
                     src={"/images/explore/" + item.img}
-                    alt={item.heading}
+                    alt={item.heading  || 'Explore'}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
@@ -56,7 +56,7 @@ const Explore = () => {
                 >
                   <Image
                     src={"/images/explore/" + item.img}
-                    alt={item.heading}
+                    alt={item.heading  || 'Explore'}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
@@ -81,7 +81,7 @@ const Explore = () => {
                 >
                   <Image
                     src={"/images/explore/" + item.img}
-                    alt={item.heading}
+                    alt={item.heading  || 'Explore'}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
@@ -102,7 +102,7 @@ const Explore = () => {
                 >
                   <Image
                     src={"/images/explore/" + item.img}
-                    alt={item.heading || ''}
+                    alt={item.heading || 'Explore'}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
