@@ -38,8 +38,12 @@ const Header = ({heroRef}) => {
           className={`flex-center justify-between lg:justify-center lg:gap-10`}
         >
           <div className="flex-center">
+            <Link 
+            href={'/'}
+            className="flex-center">
             <Logo className={`h-12 lg:h-9 text-white`} />
             <p className="hidden lg:block text-white font-semibold">Spatial</p>
+            </Link>
           </div>
           <div className="flex items-center gap-2 lg:hidden">
             <button className="lg:hidden bg-white px-4 py-2 rounded-full font-bold cursor-pointer">
