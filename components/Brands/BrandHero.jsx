@@ -17,14 +17,14 @@ const BrandHero = () => {
           </p>
           <div className="flex flex-col lg:flex-row w-full gap-8 px-[1rem]">
             <Link 
-            className="flex-1 w-full flex"
+            className="flex-1 w-full flex hover:scale-110 transition-transform ease-linear delay-150"
             href={''}>
               <span 
               className=" bg-white text-black w-full text-center rounded-full py-3 lg:py-4 font-semibold"
               >View Case Studies</span>
             </Link>
             <Link
-            className="flex-1 w-full flex"
+            className="flex-1 w-full flex hover:scale-110 transition-transform ease-linear delay-150"
             href={''}
             >
               <span 
