@@ -26,8 +26,8 @@ const PricingHero = () => {
   const { header, toggle, plans } = pricingContent;
 
   return (
-    <div className="bg-black text-white min-h-screen p-8 font-sans pt-[6rem]">
-      <div className="max-w-7xl mx-auto text-center lg:text-start">
+    <div className="bg-black text-white min-h-screen p-8 font-sans pt-[6rem] lg:px-[5rem]">
+      <div className="max-w-[85rem] mx-auto text-center lg:text-start">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{header.title}</h1>
         <p className="text-gray-400 max-w-2xl mx-auto lg:mx-0 lg:me-auto mb-8">{header.subtitle}</p>
         
@@ -43,11 +43,13 @@ const PricingHero = () => {
           {plans.map((plan, index) => {
             const styles = planStyles[plan.theme] || planStyles.default;
             return (
-              <div key={index} className={`border rounded-lg p-6 flex flex-col text-left ${styles.card}`}>
-                <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
+              <div key={index} className={`border rounded-lg p-6 flex flex-col justify-eve text-left ${styles.card}`}>
+               <div className='flex flex-col text-left min-h-[14rem]'>
+                 <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
                 <p className="text-4xl font-bold">{plan.price}</p>
                 <p className="text-gray-400 text-sm mb-4">{plan.period}</p>
-                <p className="text-gray-400 text-sm mb-6 flex-grow">{plan.description}</p>
+                <p className="text-gray-400 text-sm mb-6 ">{plan.description}</p>
+                </div>
                 <button className={`w-full font-semibold py-2 rounded-lg transition-colors ${styles.button}`}>
                   {plan.buttonText}
                 </button>
