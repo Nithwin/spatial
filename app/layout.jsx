@@ -1,6 +1,7 @@
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import './landing.css';
+import './dynamichero.css';
 import SmoothScroller from '@/components/Landing/SmoothScroller';
 
 const inter = Inter({
