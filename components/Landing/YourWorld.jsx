@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Unity from "./utils/Unity";
+import Unity from "../utils/Unity";
 
 const YourWorld = () => {
   return (

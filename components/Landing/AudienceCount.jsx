@@ -1,4 +1,4 @@
-import { AudienceCountList } from '@/constants/data'
+import { AudienceCountList } from '@/constants/landing-data'
 import React from 'react'
 
 const AudienceCount = () => {

@@ -1,71 +1,71 @@
-import { useCasesListDown, useCasesListUp } from "@/constants/data";
+import {
+  ExploreImageListDown,
+  ExploreImageListUp,
+  useCasesListDown,
+  useCasesListUp,
+} from "@/constants/landing-data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const UseCases = () => {
+const Explore = () => {
   return (
-    <section className="bg-black min-h-dvh text-white py-[5rem]">
-      <div className="flex flex-col gap-8">
-        <div className="px-2 flex flex-col gap-1">
+    <section className="min-h-dvh bg-black py-[4rem]">
+      <div className="text-white flex flex-col gap-16">
+        <div className="flex flex-col gap-3 px-[0.5rem]">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">
-            Use Cases
+            Explore
           </p>
-          <h2 className="text-xl font-bold text-center lg:text-4xl">
-            Virtual Worlds, Real Solutions
+          <h2 className="text-lg font-bold text-center lg:text-4xl mx-auto">
+            Explore Limitless Experiences Today
           </h2>
-          <p className="text-sm lg:text-sm text-center text-white/60 font-medium font-inter">
-            With over 3 million immersive experiences, Spatial is trusted by
-            global enterprises, top educators, and leading brands to deliver
-            scalable training solutions and create unforgettable marketing
-            moments.
+          <p className="text-center text-white/60 font-medium text-sm lg:text-lg px-2">
+            Dive into millions of virtual worlds, connect with others, and
+            explore creations from the Spatial community and the brands you
+            love.
           </p>
         </div>
-
         <div className="flex flex-col gap-5">
           <div className="overflow-hidden scroller">
             <div className="py-2 usecase_scroller">
-              {useCasesListUp.map((item, index) => (
+              {ExploreImageListUp.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={index}
                 >
                   <Image
-                    src={"/images/usecases/" + item.img}
+                    src={"/images/explore/" + item.img}
                     alt={item.heading}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
                   />
                   <div className="absolute inset-0 flex flex-col justify-end px-4 pb-2">
-                    <h2 className="text-sm lg:text-lg font-semibold">
-                      {item.heading}
+                    <h2 className="text-sm font-semibold">
+                      <span>{item.view} views</span>{" ● "}
+                      <span>{item.loves} loves</span>
                     </h2>
-                    <p className="text-xs lg:text-sm text-white/60">
-                      {item.subheading}
-                    </p>
                   </div>
                 </div>
               ))}
 
-              {useCasesListUp.map((item, index) => (
+              {ExploreImageListUp.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={item.heading}
                 >
                   <Image
-                    src={"/images/usecases/" + item.img}
+                    src={"/images/explore/" + item.img}
                     alt={item.heading}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
                   />
                   <div className="absolute inset-0 flex flex-col justify-end px-4 pb-2">
-                    <h2 className="text-sm lg:text-lg font-semibold">
-                      {item.heading}
+                    <h2 className="text-sm font-semibold">
+                      <span>{item.view} views</span>{" ● "}
+                      <span>{item.loves} loves</span>
                     </h2>
-                    <p className="text-xs lg:text-sm text-white/60">
-                      {item.subheading}
-                    </p>
                   </div>
                 </div>
               ))}
@@ -74,48 +74,44 @@ const UseCases = () => {
 
           <div className="overflow-hidden scroller">
             <div className="py-2 usecase_scroller_back">
-              {useCasesListDown.map((item, index) => (
+              {ExploreImageListDown.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={index}
                 >
                   <Image
-                    src={"/images/usecases/" + item.img}
+                    src={"/images/explore/" + item.img}
                     alt={item.heading}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
                   />
                   <div className="absolute inset-0 flex flex-col justify-end px-4 pb-2">
-                    <h2 className="text-sm lg:text-lg font-semibold">
-                      {item.heading}
+                    <h2 className="text-sm font-semibold">
+                      <span>{item.view} views</span>{" ● "}
+                      <span>{item.loves} loves</span>
                     </h2>
-                    <p className="text-xs lg:text-sm text-white/60">
-                      {item.subheading}
-                    </p>
                   </div>
                 </div>
               ))}
 
-              {useCasesListDown.map((item, index) => (
+              {ExploreImageListDown.map((item, index) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={item.heading}
                 >
                   <Image
-                    src={"/images/usecases/" + item.img}
+                    src={"/images/explore/" + item.img}
                     alt={item.heading}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"
                   />
                   <div className="absolute inset-0 flex flex-col justify-end px-4 pb-2">
-                    <h2 className="text-sm lg:text-lg font-semibold">
-                      {item.heading}
+                    <h2 className="text-sm font-semibold">
+                      <span>{item.view} views</span>{" ● "}
+                      <span>{item.loves} loves</span>
                     </h2>
-                    <p className="text-xs lg:text-sm text-white/60">
-                      {item.subheading}
-                    </p>
                   </div>
                 </div>
               ))}
@@ -127,4 +123,4 @@ const UseCases = () => {
   );
 };
 
-export default UseCases;
+export default Explore;

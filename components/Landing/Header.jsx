@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "./utils/Logo";
+import Logo from "../utils/Logo";
 import { Ellipsis, Plus, UserRound } from "lucide-react";
-import { NavList } from "@/constants/data";
+import { NavList } from "@/constants/landing-data";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";

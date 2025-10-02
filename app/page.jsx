@@ -1,15 +1,16 @@
 'use client';
-import AudienceCount from "@/components/AudienceCount";
-import AvatarCustomization from "@/components/AvatarCustomization";
-import BrandsScroll from "@/components/BrandsScroll"
-import CrossPlatform from "@/components/CrossPlatform";
-import Explore from "@/components/Explore";
-import Header from "@/components/Header"
-import Hero from "@/components/Hero"
-import Industry from "@/components/Industry"
-import Press from "@/components/Press";
-import UseCases from "@/components/UseCases"
-import YourWorld from "@/components/YourWorld";
+import AudienceCount from "@/components/Landing/AudienceCount";
+import AvatarCustomization from "@/components/Landing/AvatarCustomization";
+import Begin from "@/components/Landing/Begin";
+import BrandsScroll from "@/components/Landing/BrandsScroll"
+import CrossPlatform from "@/components/Landing/CrossPlatform";
+import Explore from "@/components/Landing/Explore";
+import Header from "@/components/Landing/Header"
+import Hero from "@/components/Landing/Hero"
+import Industry from "@/components/Landing/Industry"
+import Press from "@/components/Landing/Press";
+import UseCases from "@/components/Landing/UseCases"
+import YourWorld from "@/components/Landing/YourWorld";
 import { useRef } from "react"
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Explore />
       <AudienceCount />
       <Press />
+      <Begin />
     </main>
   )
 }

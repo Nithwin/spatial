@@ -1,6 +1,6 @@
 import React from 'react'
-import Unity from './utils/Unity'
-import { IndustryList } from '@/constants/data'
+import Unity from '../utils/Unity'
+import { IndustryList } from '@/constants/landing-data'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'

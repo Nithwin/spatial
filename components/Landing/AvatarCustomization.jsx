@@ -3,11 +3,11 @@ import {
   AvatarIconList,
   AvatarImageList,
   AvatarItemList,
-} from "@/constants/data";
+} from "@/constants/landing-data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import AvatarBackground from "./utils/AvatarBackground";
+import AvatarBackground from "../utils/AvatarBackground";
 
 const floatingItemStyles = [
   "bottom-0 -left-25 rotate-[30deg] lg:left-1/5 lg:-bottom-[10%]",

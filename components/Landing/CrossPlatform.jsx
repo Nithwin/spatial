@@ -1,4 +1,4 @@
-import { CrossPlatFormList } from "@/constants/data";
+import { CrossPlatFormList } from "@/constants/landing-data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
