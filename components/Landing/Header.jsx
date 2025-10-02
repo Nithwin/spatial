@@ -12,6 +12,7 @@ const Header = ({heroRef}) => {
   const headerRef = useRef(null);
   useEffect(() => {
     const header = headerRef.current;
+    if(!header || !heroRef) return;
     const hero = heroRef.current || null;
     if(!header || !hero) return;
     const st = ScrollTrigger.create({

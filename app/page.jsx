@@ -5,6 +5,7 @@ import Begin from "@/components/Landing/Begin";
 import BrandsScroll from "@/components/Landing/BrandsScroll"
 import CrossPlatform from "@/components/Landing/CrossPlatform";
 import Explore from "@/components/Landing/Explore";
+import Footer from "@/components/Landing/Footer";
 import Header from "@/components/Landing/Header"
 import Hero from "@/components/Landing/Hero"
 import Industry from "@/components/Landing/Industry"
@@ -29,6 +30,7 @@ const Home = () => {
       <AudienceCount />
       <Press />
       <Begin />
+      <Footer />
     </main>
   )
 }

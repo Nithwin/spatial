@@ -30,8 +30,8 @@ const Explore = () => {
             <div className="py-2 usecase_scroller">
               {ExploreImageListUp.map((item, index) => (
                 <div
+                key={index}
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
-                  key={index}
                 >
                   <Image
                     src={"/images/explore/" + item.img}
@@ -51,8 +51,8 @@ const Explore = () => {
 
               {ExploreImageListUp.map((item, index) => (
                 <div
+                  key={index+6}
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
-                  key={item.heading}
                 >
                   <Image
                     src={"/images/explore/" + item.img}
@@ -97,12 +97,12 @@ const Explore = () => {
 
               {ExploreImageListDown.map((item, index) => (
                 <div
+                key={index+"duplicate"}
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
-                  key={item.heading}
                 >
                   <Image
                     src={"/images/explore/" + item.img}
-                    alt={item.heading}
+                    alt={item.heading || ''}
                     width={1000}
                     height={1000}
                     className="object-contain mask-b-from-3.5 group-hover:scale-110 transition-transform delay-150 ease-linear"

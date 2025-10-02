@@ -5,7 +5,7 @@ import React from "react";
 
 const Begin = () => {
   return (
-    <section className="min-h-dvh bg-black px-4">
+    <section className=" bg-black px-4">
       <div className="text-white flex flex-col lg:flex-row items-center gap-10 max-w-[110rem] mx-auto lg:px-[2rem]">
         <div 
         className="flex flex-col gap-8 lg:w-1/3">

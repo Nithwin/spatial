@@ -263,3 +263,33 @@ export const PressList = [
     content:`The cloud-based platform aims to make it easy for brands and developers to embrace a web-focused approach to user generated content`,
   },
 ]
+
+export const footerLinks = [
+  {
+    title: "Company",
+    links: [
+      { name: "About", href: "/about" },
+      { name: "Brands", href: "/brands" },
+      { name: "Corporate Training", href: "/corporate-training" },
+      { name: "Education", href: "/education" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "Pricing", href: "/pricing" },
+      { name: "Contact Sales", href: "/contact-sales" },
+      { name: "Support", href: "/support" },
+      { name: "Careers", href: "/careers" },
+    ],
+  },
+  {
+    title: "Legal & More",
+    links: [
+      { name: "Terms", href: "/terms" },
+      { name: "Privacy", href: "/privacy" },
+      { name: "Guidelines", href: "/guidelines" },
+      { name: "Creator Toolkit", href: "/creator-toolkit" },
+    ],
+  },
+];
