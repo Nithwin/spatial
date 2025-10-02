@@ -6,7 +6,7 @@ const DynamicHero = () => {
   return (
     <section className="min-h-screen bg-black text-white p-4 lg:px-8 pt-28 flex flex-col lg:flex-row gap-8 max-w-[110rem] mx-auto">
       {/* --- LEFT COLUMN --- */}
-      <div className="w-full flex flex-col gap-4 lg:w-10/12">
+      <div className="w-full flex flex-col gap-4 lg:w-9/12">
         {/* Iframe Container */}
         <div className="w-full max-w-[420px] mx-auto lg:max-w-none aspect-[9/16] lg:aspect-video rounded-2xl overflow-hidden border border-gray-800">
           <IFrameLoader
@@ -35,7 +35,7 @@ const DynamicHero = () => {
           </div>
 
           {/* Release Date & Tags (Right Part) */}
-          <div className="lg:w-4/12">
+          <div className="lg:w-3/12">
             <div>
               <h3 className="text-gray-400 font-semibold">Release Date</h3>
               <p>13 September 2023</p>
@@ -58,22 +58,12 @@ const DynamicHero = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-2/12 rounded-2xl p-2 flex flex-col gap-5 overflow-x-hidden">
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[10rem] w-full bg-gray-500/40 rounded-xl"></div>
+      <div className="w-full lg:w-4/12 rounded-2xl p-2 flex flex-col gap-5 overflow-x-hidden">
+        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
+        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
+        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
+        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
+        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
       </div>
     </section>
   );
