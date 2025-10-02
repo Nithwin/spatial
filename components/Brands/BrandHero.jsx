@@ -15,7 +15,7 @@ const BrandHero = () => {
             the Unity engine. Launch instantly across web, mobile, and VR — and
             engage your audience through interactive storytelling that converts.
           </p>
-          <div className="flex flex-col lg:flex-row w-full gap-8 px-[1rem]">
+          <div className="flex flex-col lg:flex-row w-full gap-8 ">
             <Link 
             className="flex-1 w-full flex hover:scale-110 transition-transform ease-linear delay-150"
             href={''}>
