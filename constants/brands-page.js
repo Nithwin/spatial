@@ -40,3 +40,12 @@ export const BrandAudienceList = [
         subheading:"of Gen Z want brands to create experiences that let them explore and express themselves",
     },
 ]
+
+
+export const WhyBrandsList = [
+    `White-labeled & brand-safe hosting`,
+    `Web, Mobile & VR compatible`,
+    `Fully embeddable & customizable`,
+    `Native shoppable integrations`,
+    `Performance marketing + ad-ready launch support`,
+]

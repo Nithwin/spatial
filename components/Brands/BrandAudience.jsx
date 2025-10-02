@@ -3,7 +3,7 @@ import React from 'react'
 
 const BrandAudience = () => {
   return (
-    <section className='min-h-[20rem] bg-black py-[8rem] relative flex overflow-hidden'>
+    <section className='min-h-[40rem] bg-black py-[8rem] relative flex overflow-hidden'>
         <div className='text-white px-4 flex flex-col justify-center items-center w-full gap-16 relative z-50'>
             <div className='flex flex-col gap-5'>
                 <h1 className='text-center text-3xl lg:text-5xl font-bold'>Your Audience Is Already Playing</h1>
