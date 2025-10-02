@@ -24,7 +24,7 @@ const BrandToLife = () => {
                         className='text-xl font-semibold'
                         >{brand.heading}</h3>
                         <p
-                        className='text-white/60 text-sm font-semibold pe-1'
+                        className='text-white/60 text-sm lg:text-[15px] font-semibold pe-1'
                         >{brand.subheading}</p>
                       </div>
                     </li>

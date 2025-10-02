@@ -25,3 +25,18 @@ export const BrandsToLifeList = [
         subheading:`Our platform supports programmatic ad integrations — so your game can be promoted like a campaign. One click from ad to gameplay. No friction. Just fun.`,
     },
 ]
+
+export const BrandAudienceList = [
+    {
+        heading:"81%",
+        subheading:"of Gen Z play video games weekly",
+    },
+    {
+        heading:"2x",
+        subheading:"engagement on branded games vs. static social content",
+    },
+    {
+        heading:"76%",
+        subheading:"of Gen Z want brands to create experiences that let them explore and express themselves",
+    },
+]
