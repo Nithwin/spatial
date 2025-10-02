@@ -1,7 +1,7 @@
 export const NavList = [
   {
     name: "Brands",
-    to: "#brands",
+    to: "/brands",
   },
   {
     name: "Corporate Training",

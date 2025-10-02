@@ -57,7 +57,11 @@ const Header = ({heroRef}) => {
           >
             {NavList.map((nav, index) => (
               <li key={index}>
-                <span>{nav.name}</span>
+                <Link
+                href={nav.to}
+                >
+                  <span>{nav.name}</span>
+                </Link>
               </li>
             ))}
             <li className="lg:hidden">
