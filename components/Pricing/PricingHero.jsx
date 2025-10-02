@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { pricingContent } from '@/constants/pricing-page';
 
 const CheckIcon = () => (
@@ -24,6 +25,7 @@ const planStyles = {
 
 const PricingHero = () => {
   const { header, toggle, plans } = pricingContent;
+  const [billingCycle, setBillingCycle] = useState('annually');
 
   return (
     <div className="bg-black text-white min-h-screen p-8 font-sans pt-[6rem] lg:px-[5rem]">
@@ -33,8 +35,20 @@ const PricingHero = () => {
         
         <div className="flex justify-center lg:justify-start items-center mb-12">
           <div className="bg-gray-800 rounded-full p-1 flex">
-            <button className="px-6 py-2 rounded-full text-sm font-medium text-white">{toggle.monthly}</button>
-            <button className="px-6 py-2 rounded-full text-sm font-medium bg-white text-black">{toggle.annually}</button>
+            <button 
+              onClick={() => setBillingCycle('monthly')}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                billingCycle === 'monthly' ? 'bg-white text-black' : 'text-white'
+              }`}>
+              {toggle.monthly}
+            </button>
+            <button 
+              onClick={() => setBillingCycle('annually')}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                billingCycle === 'annually' ? 'bg-white text-black' : 'text-white'
+              }`}>
+              {toggle.annually}
+            </button>
           </div>
           <span className="ml-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">{toggle.badge}</span>
         </div>
@@ -42,17 +56,22 @@ const PricingHero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {plans.map((plan, index) => {
             const styles = planStyles[plan.theme] || planStyles.default;
+            const planDetails = plan[billingCycle];
+
             return (
-              <div key={index} className={`border rounded-lg p-6 flex flex-col justify-eve text-left ${styles.card}`}>
-               <div className='flex flex-col text-left min-h-[14rem]'>
-                 <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
-                <p className="text-4xl font-bold">{plan.price}</p>
-                <p className="text-gray-400 text-sm mb-4">{plan.period}</p>
-                <p className="text-gray-400 text-sm mb-6 ">{plan.description}</p>
+              // 👇 REVERTED: Restored your original card structure
+              <div key={index} className={`border rounded-lg p-6 flex flex-col text-left ${styles.card}`}>
+                <div className='flex flex-col text-left min-h-[14rem]'>
+                  <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
+                  <p className="text-4xl font-bold">{planDetails.price}</p>
+                  <p className="text-gray-400 text-sm mb-4">{planDetails.period}</p>
+                  <p className="text-gray-400 text-sm mb-6">{plan.description}</p>
                 </div>
+                
                 <button className={`w-full font-semibold py-2 rounded-lg transition-colors ${styles.button}`}>
                   {plan.buttonText}
                 </button>
+
                 <hr className="border-gray-700 my-6" />
                 {plan.note && <p className="text-xs text-gray-400 mb-4">{plan.note}</p>}
                 <ul className="space-y-3 text-sm text-gray-300">

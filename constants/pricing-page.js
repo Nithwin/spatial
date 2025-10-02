@@ -1,5 +1,7 @@
 // content.js
 
+// content.js
+
 export const pricingContent = {
   header: {
     title: "Pick Your Plan",
@@ -13,11 +15,17 @@ export const pricingContent = {
   plans: [
     {
       name: "Free",
-      price: "$0",
-      period: "Per Month",
       description: "For testing, prototyping, and casual social use.",
       buttonText: "Get Started",
-      theme: "default", // Add this
+      theme: "default",
+      monthly: {
+        price: "$0",
+        period: "Per Month",
+      },
+      annually: {
+        price: "$0",
+        period: "Per Year",
+      },
       features: [
         "Host up to 5 concurrent users across your experiences",
         "500MB of storage per space",
@@ -26,12 +34,18 @@ export const pricingContent = {
     },
     {
       name: "Personal",
-      price: "$20",
-      period: "Per Month",
       description: "Build richer spaces, learn 3D tools, and share your creativity (For personal and non-commercial use).",
       buttonText: "Get Started",
       note: "*Non-commercial use only",
-      theme: "default", // Add this
+      theme: "default",
+      monthly: {
+        price: "$25",
+        period: "Per Month",
+      },
+      annually: {
+        price: "$20",
+        period: "Per Month, billed annually",
+      },
       features: [
         "Unlimited number of spaces",
         "1GB storage per space",
@@ -42,12 +56,18 @@ export const pricingContent = {
     },
     {
       name: "Education",
-      price: "Custom",
-      period: "Per Account / Month",
       description: "For universities and institutions. Foster campus-wide immersive and collaborative learning.",
       buttonText: "Contact Us",
       note: "Everything in Personal",
-      theme: "education", // Add this
+      theme: "education",
+      monthly: {
+        price: "Custom",
+        period: "Per Account / Month",
+      },
+      annually: {
+        price: "Custom",
+        period: "Per Account / Year",
+      },
       features: [
         "Flexible content and team management tools",
         "Real-time insights into student engagement",
@@ -57,12 +77,18 @@ export const pricingContent = {
     },
     {
       name: "Enterprise",
-      price: "Custom",
-      period: "Per Account / Month",
       description: "For companies, agencies, and brands ready to scale. Host secure, branded 3D experiences.",
       buttonText: "Contact Us",
       note: "Everything in Personal",
-      theme: "enterprise", // Add this
+      theme: "enterprise",
+      monthly: {
+        price: "Custom",
+        period: "Per Account / Month",
+      },
+      annually: {
+        price: "Custom",
+        period: "Per Account / Year",
+      },
       features: [
         "Fully customized content limits and participant capacity",
         "Dedicated white-label features-Full screen mode, Spatial Embed",
@@ -72,7 +98,6 @@ export const pricingContent = {
     },
   ],
 };
-
 
 const Check = () => '✓';
 
