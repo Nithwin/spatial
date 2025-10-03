@@ -16,13 +16,17 @@ const Begin = () => {
             Create Your <br /> Virtual Experience
           </h2>
           <div className="flex items-center gap-2 ">
-            <Link href={"/"}>
-              <span className="bg-gradient-to-l to-cyan-500 hover:to-blue-700 transition-colors delay-200 ease-linear from-blue-700 text-white flex w-fit px-6 lg:px-18 font-bold py-3 rounded-full text-sm lg:text-lg items-center">
+            <Link href={"/"}
+            className="w-full"
+            >
+              <span className="bg-gradient-to-l to-cyan-500 hover:to-blue-700 transition-colors delay-200 ease-linear from-blue-700 text-white flex w-full px-6 font-bold py-3 rounded-full text-sm lg:text-lg items-center justify-center">
                 Get Started
               </span>
             </Link>
-            <Link href={"/"}>
-              <span className="bg-transparent font-bold text-white flex w-fit px-2 py-2 text-sm lg:text-lg items-center gap-2">
+            <Link href={"/"}
+            className="w-full"
+            >
+              <span className="bg-transparent font-bold text-white flex w-full px-6 py-2 text-sm lg:text-lg items-center gap-2 whitespace-nowrap">
                 <Mail className="h-5" />
                 Contact Sales
               </span>
