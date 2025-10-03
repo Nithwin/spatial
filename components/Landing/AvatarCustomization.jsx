@@ -32,10 +32,10 @@ const AvatarCustomization = () => {
   // }, [currentImage]);
   return (
     <section className=" bg-black relative overflow-hidden lg:px-[5rem] ">
-      <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[8rem] lg:w-full">
+      <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[5rem] lg:w-full">
         
         <div className="flex-1 z-50 w-full">
-          <div className="flex flex-col gap-3 w-full">
+          <div className="flex flex-col gap-4 w-full">
             <p className="text-blue-600 font-semibold text-start text-sm lg:text-xl">
               Avatar Customization
             </p>

@@ -5,7 +5,7 @@ export const NavList = [
   },
   {
     name: "Corporate Training",
-    to: "#training",
+    to: "/dynamic",
   },
   {
     name: "Education",
