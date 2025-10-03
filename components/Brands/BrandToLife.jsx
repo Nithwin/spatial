@@ -7,7 +7,7 @@ const BrandToLife = () => {
     className='min-h-dvh bg-black py-[4rem] lg:px-[6rem]'
     >
         <div className='text-white flex flex-col gap-14 max-w-[85rem] mx-auto'>
-            <h1 className='text-2xl font-bold text-center'>Bring Your Brand to Life</h1>
+            <h1 className='text-2xl lg:text-5xl font-bold text-center'>Bring Your Brand to Life</h1>
             <ul className='flex flex-col lg:grid lg:grid-cols-6 gap-8 lg:gap-0 lg:gap-y-16'>
                 {
                   BrandsToLifeList.map((brand, index) => (
