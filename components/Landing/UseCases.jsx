@@ -4,16 +4,16 @@ import React from "react";
 
 const UseCases = () => {
   return (
-    <section className="bg-black text-white">
-      <div className="flex flex-col gap-8">
-        <div className="px-2 flex flex-col gap-1">
+    <section className="bg-black text-white py-10 lg:py-14">
+      <div className="flex flex-col gap-16">
+        <div className="px-2 flex flex-col gap-2 justify-center items-center">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">
             Use Cases
           </p>
           <h2 className="text-xl font-bold text-center lg:text-4xl">
             Virtual Worlds, Real Solutions
           </h2>
-          <p className="text-sm lg:text-sm text-center text-white/60 font-medium font-inter">
+          <p className="text-sm text-center text-white/60 font-medium font-inter max-w-[55rem] mx-auto">
             With over 3 million immersive experiences, Spatial is trusted by
             global enterprises, top educators, and leading brands to deliver
             scalable training solutions and create unforgettable marketing
@@ -47,7 +47,7 @@ const UseCases = () => {
                 </div>
               ))}
 
-              {useCasesListUp.map((item, index) => (
+              {useCasesListUp.map((item) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={item.heading}
@@ -97,7 +97,7 @@ const UseCases = () => {
                 </div>
               ))}
 
-              {useCasesListDown.map((item, index) => (
+              {useCasesListDown.map((item) => (
                 <div
                   className="group rounded-2xl relative aspect-video w-56 lg:w-96 flex-shrink-0 overflow-hidden cursor-pointer"
                   key={item.heading}

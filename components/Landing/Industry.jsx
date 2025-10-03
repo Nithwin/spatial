@@ -7,8 +7,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 const Industry = () => {
   return (
-    <section id="industry-verticals" className=''>
-        <div className='flex flex-col gap-5 lg:gap-10 max-w-[85rem] mx-auto'>
+    <section id="industry-verticals" className='py-16 md:py-24'>
+        <div className='flex flex-col gap-16 max-w-[85rem] mx-auto'>
             <div className='flex flex-col gap-3 lg:gap-5'>
                 <div className='flex items-center gap-2'>
                     <h3 className='text-xl  font-semibold'>Powered by </h3>

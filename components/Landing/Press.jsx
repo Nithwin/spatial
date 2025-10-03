@@ -37,7 +37,7 @@ const Press = () => {
   }, [emblaApi]);
 
   return (
-    <section className="bg-black">
+    <section className="bg-black py-10  lg:py-14">
       <div className="text-white flex flex-col gap-10">
         <div className="flex flex-col gap-3 px-[0.5rem]">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">

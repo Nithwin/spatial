@@ -4,9 +4,9 @@ import Unity from "../utils/Unity";
 
 const YourWorld = () => {
   return (
-    <section className="bg-black">
-      <div className="text-white flex flex-col max-w-[110rem] lg:px-[5rem] mx-auto">
-        <div className="flex flex-col gap-3">
+    <section className="bg-black py-10  lg:py-14">
+      <div className="text-white flex flex-col max-w-[110rem] lg:px-[5rem] mx-auto gap-16">
+        <div className="flex flex-col gap-2">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">
             Your World, Your Way
           </p>
@@ -17,7 +17,7 @@ const YourWorld = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row w-full px-[2rem] gap-5 lg:gap-2">
-          <div className="flex-1 flex flex-col gap-15 p-[1rem] lg:p-[5rem]">
+          <div className="flex-1 flex flex-col gap-15 p-[1rem] lg:px-[5rem]">
             <div className="">
               <Image
                 src={"/images/yourworld/build-without-code.webp"}
@@ -45,7 +45,7 @@ const YourWorld = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-15 p-[1rem] lg:p-[5rem]">
+          <div className="flex-1 flex flex-col gap-15 p-[1rem] lg:px-[5rem]">
             <div className="relative">
               <Image
                 src={"/images/yourworld/unity-compatibility.webp"}
