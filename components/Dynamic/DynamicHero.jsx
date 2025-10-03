@@ -60,15 +60,17 @@ const DynamicHero = () => {
       </div>
 
       <div className="w-full lg:w-4/12 rounded-2xl flex flex-col gap-5 overflow-x-hidden">
-        {dynamicPageImages.map((image, index) => (
-          <div key={index} className="aspect-video w-full bg-gray-500/40 rounded-xl overflow-hidden">
+        {dynamicPageImages.map((item, index) => (
+          <div key={index} className="aspect-video w-full bg-gray-500/40 rounded-xl overflow-hidden relative">
             <Image
-              src={image}
+              src={item.image}
               alt={`Thumbnail ${index + 1}`}
               width={1920}
               height={1080}
               className="w-full h-full object-cover"
             />
+            <div className="absolute left-0 right-0 bottom-0 h-[5rem] bg-gradient-to-t from-black/90 from-5 to-95% to-transparent"></div>
+            <p className="absolute bottom-2 left-4 text-white font-semibold text-xl">{item.title}</p>
           </div>
         ))}
       </div>
