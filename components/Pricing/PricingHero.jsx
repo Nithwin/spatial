@@ -50,7 +50,7 @@ const PricingHero = () => {
               {toggle.annually}
             </button>
           </div>
-          <span className="ml-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">{toggle.badge}</span>
+          <span className={` ${billingCycle == 'monthly' ? 'hidden' : 'block'} ml-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full`}>{toggle.badge}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
