@@ -15,6 +15,10 @@ export const NavList = [
     name: "Pricing",
     to: "/pricing",
   },
+  {
+    name: "Contact",
+    to: "/contact",
+  },
 ];
 
 export const Brands = [

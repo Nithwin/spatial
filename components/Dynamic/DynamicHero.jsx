@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import IFrameLoader from "./IFrameLoader";
-import { FiSettings, FiMoreHorizontal } from "react-icons/fi"; // Example icons
-import { dynamicPageImages } from "../../content/dynamicpage.js";
+import { dynamicPageImages } from "../../constants/dynamicpage.js";
 
 const DynamicHero = () => {
   return (
@@ -37,7 +36,7 @@ const DynamicHero = () => {
           </div>
 
           {/* Release Date & Tags (Right Part) */}
-          <div className="lg:w-full">
+          <div className="lg:w-9/12">
             <div>
               <h3 className="text-gray-400 font-semibold">Release Date</h3>
               <p>13 September 2023</p>
