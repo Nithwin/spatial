@@ -4,7 +4,7 @@ import React from "react";
 
 const UseCases = () => {
   return (
-    <section className="bg-black py-20 text-white">
+    <section className="bg-black text-white">
       <div className="flex flex-col gap-8">
         <div className="px-2 flex flex-col gap-1">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">

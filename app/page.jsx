@@ -20,34 +20,34 @@ const Home = () => {
     <main className="relative bg-black">
       <Header heroRef={heroRef} />
       <Hero ref={heroRef} />
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <BrandsScroll />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <Industry />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <UseCases />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <YourWorld />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <CrossPlatform />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <AvatarCustomization />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <Explore />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <AudienceCount />
       </div>
-      <div className="py-8 md:py-16">
+      <div className="py-10 lg:py-12 ">
         <Press />
       </div>
-      <div className="pt-8 md:pt-16">
+      <div className="pt-6">
         <Begin />
       </div>
       <Footer />

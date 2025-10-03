@@ -4,7 +4,7 @@ import AnimatedNumber from '@/components/reusable/AnimatedNumber';
 
 const AudienceCount = () => {
   return (
-    <section className='bg-black pb-[7rem]'>
+    <section className='bg-black'>
       <div className='h-[70dvh] lg:h-[50dvh] relative '>
         <div className='relative flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20 w-full h-full z-50 text-white'>
           {AudienceCountList.map((data, index) => (
