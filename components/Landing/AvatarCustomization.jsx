@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import AvatarBackground from "../utils/AvatarBackground";
+import Scene from "../3d/Scene";
 
 const floatingItemStyles = [
   "bottom-0 -left-25 rotate-[30deg] lg:left-1/5 lg:-bottom-[10%]",
@@ -74,15 +75,8 @@ const AvatarCustomization = () => {
         </div>
 
         <div className="flex-1 relative lg:static py-[4rem] lg:py-0">
-          <div className="relative z-50 p-6  lg:aspect-[9/16] lg:w-[30rem] mx-auto">
-            <Image
-            key={AvatarImageList[currentImage]}
-              src={"/images/avatarcustomization/" + AvatarImageList[currentImage]}
-              alt="Image"
-              height={500}
-              width={500}
-              className={`avataranimate h-full w-full object-contain relative z-50`}
-            />
+          <div className="relative z-50 p-6 max-h-[50vh] lg:max-h-none lg:h-full lg:w-full mx-auto">
+            <Scene index={currentImage} />
           </div>
           
           <AvatarBackground
