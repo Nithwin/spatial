@@ -4,7 +4,7 @@ import React from 'react'
 const WhyBrands = () => {
   return (
     <section className='bg-black lg:min-h-[40rem] relative flex py-[5rem]'>
-        <div className='relative z-50 text-white flex gap-[5rem] flex-col lg:flex-row justify-between items-center px-4 w-full max-w-[85rem] mx-auto'>
+        <div className='relative z-50 text-white flex gap-[5rem] flex-col lg:flex-row justify-between items-center px-4 lg:px-[4rem] w-full max-w-[95rem] mx-auto'>
             <div className='flex flex-col gap-4 '>
                 <h1
                 className='text-3xl lg:text-6xl font-bold'
