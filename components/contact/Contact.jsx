@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { socialLinks, contactDetails } from '../../constants/contact';
+import { Toaster, toast } from 'react-hot-toast';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export default function Contact() {
     phoneNumber: '',
     inquiry: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -18,14 +20,35 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
-    // You can add your form submission logic here
+    setIsLoading(true);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success('Your message has been sent successfully!');
+        setFormData({ fullName: '', email: '', phoneNumber: '', inquiry: '' });
+      } else {
+        toast.error('Failed to send your message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('An unexpected error occurred. Please try again later.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
-    <div className="min-h-screen h-full w-full bg-[#0D0D0D] text-white font-sans flex items-center justify-center">
+    <div className="min-h-screen h-full w-full bg-[#0D0D0D] text-white font-sans flex items-center justify-center pt-[2.5rem]">
+      <Toaster position="top-center" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch">
           
@@ -77,6 +100,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -90,6 +114,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -102,6 +127,7 @@ export default function Contact() {
                   value={formData.phoneNumber}
                   onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -115,14 +141,16 @@ export default function Contact() {
                   onChange={handleChange}
                   className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
                   required
+                  disabled={isLoading}
                 ></textarea>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-[#FF55A5] to-[#AD59C2] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-opacity"
+                  disabled={isLoading}
+                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-[#FF55A5] to-[#AD59C2] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-opacity disabled:opacity-50"
                 >
-                  Send
+                  {isLoading ? 'Sending...' : 'Send'}
                 </button>
               </div>
             </form>
