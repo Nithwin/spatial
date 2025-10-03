@@ -4,7 +4,7 @@ import Unity from "../utils/Unity";
 
 const YourWorld = () => {
   return (
-    <section className="min-h-dvh bg-black">
+    <section className="bg-black py-20">
       <div className="text-white flex flex-col max-w-[110rem] lg:px-[5rem] mx-auto">
         <div className="flex flex-col gap-3">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">

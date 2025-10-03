@@ -10,7 +10,7 @@ import React from "react";
 
 const Explore = () => {
   return (
-    <section className="min-h-dvh bg-black py-[4rem]">
+    <section className=" bg-black py-[4rem]">
       <div className="text-white flex flex-col gap-16">
         <div className="flex flex-col gap-3 px-[0.5rem]">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">

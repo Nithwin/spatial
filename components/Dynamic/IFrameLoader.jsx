@@ -44,4 +44,4 @@ const IFrameLoader = ({src,title}) => {
   )
 }
 
-export default IFrameLoader
+export default IFrameLoader 

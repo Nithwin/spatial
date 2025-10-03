@@ -5,7 +5,7 @@ import React from "react";
 
 const CrossPlatform = () => {
   return (
-    <section className="min-h-dvh bg-black pt-[4rem] lg:px-[8rem]">
+    <section className="bg-black lg:px-[8rem]">
       <div className="text-white px-[2rem]  mx-auto max-w-[95rem]">
         <div className="flex flex-col gap-3 px-[3rem]">
           <p className="text-blue-600 font-semibold text-center text-lg lg:text-xl">

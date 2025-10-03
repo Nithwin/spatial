@@ -6,7 +6,7 @@ import React from "react";
 
 const BrandsScroll = () => {
   return (
-    <section className="bg-black py-8 md:py-12">
+    <section className="bg-black">
       <div className="scroller grayscale-100">
         <div className="scroller__inner">
           {Brands.map((brand, index) => (

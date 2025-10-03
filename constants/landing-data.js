@@ -13,7 +13,7 @@ export const NavList = [
   },
   {
     name: "Pricing",
-    to: "#pricing",
+    to: "/pricing",
   },
 ];
 

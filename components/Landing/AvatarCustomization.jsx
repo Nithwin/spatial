@@ -31,7 +31,7 @@ const AvatarCustomization = () => {
   //   return ()=> clearTimeout(timer);
   // }, [currentImage]);
   return (
-    <section className="min-h-dvh bg-black py-[5rem] lg:py-0 relative overflow-hidden lg:px-[5rem]">
+    <section className=" bg-black relative overflow-hidden lg:px-[5rem]">
       <div className="text-white bg-gradient-to-t relative max-w-[110rem] flex flex-col lg:flex-row justify-between lg:items-center px-[1.5rem] mx-auto overflow-hidden lg:px-[8rem] lg:w-full">
         
         <div className="flex-1 z-50 w-full">
