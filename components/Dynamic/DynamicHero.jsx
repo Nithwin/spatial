@@ -1,6 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import IFrameLoader from "./IFrameLoader";
 import { FiSettings, FiMoreHorizontal } from "react-icons/fi"; // Example icons
+import { dynamicPageImages } from "../../content/dynamicpage.js";
 
 const DynamicHero = () => {
   return (
@@ -59,11 +61,17 @@ const DynamicHero = () => {
       </div>
 
       <div className="w-full lg:w-4/12 rounded-2xl p-2 flex flex-col gap-5 overflow-x-hidden">
-        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
-        <div className="min-h-[17rem] w-full bg-gray-500/40 rounded-xl"></div>
+        {dynamicPageImages.map((image, index) => (
+          <div key={index} className="aspect-video w-full bg-gray-500/40 rounded-xl overflow-hidden">
+            <Image
+              src={image}
+              alt={`Thumbnail ${index + 1}`}
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
