@@ -37,7 +37,7 @@ const DynamicHero = () => {
           </div>
 
           {/* Release Date & Tags (Right Part) */}
-          <div className="lg:w-5/12">
+          <div className="lg:w-full">
             <div>
               <h3 className="text-gray-400 font-semibold">Release Date</h3>
               <p>13 September 2023</p>
@@ -60,7 +60,7 @@ const DynamicHero = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-4/12 rounded-2xl p-2 flex flex-col gap-5 overflow-x-hidden">
+      <div className="w-full lg:w-4/12 rounded-2xl flex flex-col gap-5 overflow-x-hidden">
         {dynamicPageImages.map((image, index) => (
           <div key={index} className="aspect-video w-full bg-gray-500/40 rounded-xl overflow-hidden">
             <Image
