@@ -93,7 +93,7 @@ const Header = ({heroRef}) => {
               Log In
             </span>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/dashboard"}>
             <span className="bg-gradient-to-l to-cyan-500 hover:to-blue-700 transition-colors delay-200 ease-linear from-blue-700 text-white flex w-fit px-4 py-2 rounded-full text-lg items-center">
               <Plus className="text-white h-5 font-black" />
               Create for Free
