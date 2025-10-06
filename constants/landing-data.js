@@ -8,8 +8,8 @@ export const NavList = [
     to: "/dynamic",
   },
   {
-    name: "Education",
-    to: "#education",
+    name: "Try on AR",
+    to: "/tryon",
   },
   {
     name: "Pricing",

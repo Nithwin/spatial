@@ -1,27 +1,45 @@
 export const dynamicPageImages = [
   {
     id: 1,
-    title: "The Verse",
+    title: "Vero Italy",
     image: "/images/dynamicpage/thumbnails/1.png",
+    url: "https://veroitaly.strategyfox.in/",
   },
   {
     id: 2,
-    title: "Art Beats + Lyrics",
-    image: "/images/dynamicpage/thumbnails/2.png",
+    title: "Goal Rush",
+    image: "/images/dynamicpage/thumbnails/4.png",
+    url: "https://goalrush.strategyfox.in/",
   },
   {
     id: 3,
-    title: "Space Elevator",
-    image: "/images/dynamicpage/thumbnails/3.png",
+    title: "Digitron",
+    image: "/images/dynamicpage/thumbnails/5.png",
+    url: "https://digitron.strategyfox.in/",
   },
   {
     id: 4,
-    title: "Phony Ppl",
-    image: "/images/dynamicpage/thumbnails/4.png",
+    title: "Zelviano",
+    image: "/images/dynamicpage/thumbnails/3.png",
+    url: "https://zelviano.strategyfox.in/",
   },
   {
     id: 5,
-    title: "Art Gallery",
-    image: "/images/dynamicpage/thumbnails/5.png",
+    title: "Pixel Pals",
+    image: "/images/dynamicpage/thumbnails/2.png",
+    url: "https://pixelpals.strategyfox.in/",
   },
+  {
+    id: 6,
+    title: "Deyga",
+    image: "/images/dynamicpage/thumbnails/1.png",
+    url: "https://deyga.strategyfox.in/",
+  },
+  {
+    id: 7,
+    title: "Living Room",
+    image: "/images/dynamicpage/thumbnails/6.png",
+    url: "https://livingroom.strategyfox.in/",
+  },
+
 ];
